@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   /**  outline: 1px solid blue; */
+}
+
+body, html {
+    background-color: var(--background);
+    color: var(--color);
+}
+
+#app header .grid .item .logo {
+    width: 100%;
+    height: 100%;
+    background: var(--logo) no-repeat;
+    background-size: contain;
+}
+
+#app header .grid .item nav label {
+    color: var(--humburger-color);
+}
+
+#app main .teaser {
+    display: var(--teaserVisible);
+    padding: var(--elementPadding);
+    border: var(--teaser-border);
+    background: var(--teaserImage) no-repeat center;
+    background-size: cover;
+}
+
+#app main .content {
+    padding: var(--content-marginTop);
+}
+
+#app footer .item {
+    text-align: center;
+}
+
+.content-padding {
+    padding: var(--content-padding);
+}

@@ -1,0 +1,42 @@
+#app {
+    display: grid;
+    display: -ms-grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0 0;
+    grid-template-areas: 
+        "Header Header Header"
+        "Main Main Main"
+        "Footer Footer Footer";
+    min-height: 100vh;
+}
+
+header {
+    grid-area: Header;
+    border: var(--header-border);
+    background-color: var(--header-background);
+    color: var(--header-fontColor);
+}
+
+header .grid {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: auto 1fr;
+    gap: 0 0;
+    grid-template-areas: "Logo" "Navigation";
+}
+
+#app header .grid .item nav {
+    width: 100%;
+    margin-top: calc(calc(var(--header-height) / 2) / 2);
+    margin-bottom: calc(calc(var(--header-height) / 2) / 2);
+}
+
+main {
+    grid-area: Main;
+}
+
+footer {
+    grid-area: Footer;
+    border: var(--footer-border);
+    background-color: var(--footer-background);
+}

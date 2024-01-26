@@ -1,0 +1,78 @@
+@media screen and (min-width: 1024px) {
+    body, html {
+        font-size: var(--desktopFontSize);
+    }
+
+    #app {
+        margin: 0 auto;
+        width: 100vw;
+        max-width:100%;
+    }
+
+    #app header {
+        min-height: var(--header-height);
+        padding: var(--elementPadding);
+    }
+
+    #app header .grid {
+        margin: 0 auto;
+        width: 60vw;
+    }
+
+    #app header .grid .item {
+        max-width: 60vw;
+        min-width: 5vw;
+    }
+
+    #app header .grid .item .logo {
+        background-position: right;
+    }
+
+    #app header .grid .item nav input[type='checkbox'], nav label {
+        display: none;
+    }
+
+    #app header .grid .item nav ul {
+        list-style-type: none;
+    }
+
+    #app header .grid .item nav ul li {
+        display: inline-flex;
+        display: -webkit-inline-flex;
+        margin: 0 0.6em;
+    }
+
+    #app header .grid .item nav ul li a {
+        color: var(--header-fontColor);
+        text-decoration: none;
+    }
+
+    #app header .grid .item nav ul li a:hover {
+        animation: fade 0.2s;
+        color: var(--desktop-hoverColor);
+        -webkit-animation: fade 0.8s;
+        -moz-animation: fade 0.8s;
+    }
+
+    #app main .content {
+        margin: 0 auto;
+        width: 60vw;
+    }
+
+    #app main .teaser {
+        margin: 0 auto;
+        width: var(--teaserSize);
+        height: 30vh;
+    }
+
+    #app footer {
+        min-height: var(--footer-height);
+        padding: var(--elementPadding);
+    }
+
+    #app footer .item {
+        margin: 0 auto;
+        width: 60vw;
+        padding: var(--elementPadding);
+    }
+}

@@ -1,0 +1,46 @@
+:root {
+    /** Main Config */
+    --background: #fff;
+    --color: #333;
+    --desktopFontSize: 1.0em;
+    --mobileFontSize: 1.1em;
+    --logo: url('../media/logo_dark.svg');
+
+    /** Font Config */
+    --fontFamily: 'Roboto';
+    --fontPath: url('../media/Roboto-Regular.ttf');
+    --fontType: format('truetype');
+    --fontFormat: sans-serif;
+
+    /** Site Config */
+    --header-height: 5vh; 
+    --header-background: #fff;
+    --header-border: none;
+    --header-fontColor: #333;
+    --footer-height: 10vh;
+    --footer-background: #f7f7f7;
+    --footer-border: 1px solid #b2b2b2;
+    --elementPadding: 0.5em 0.5em 0.5em 0.5em; 
+
+    --teaserVisible: block; /** none = not visible / block = visible */
+    --teaserSize: 70vw; /** Changes the Size of the Teaser on the Desktop site. Mobile should be always 100vw.*/
+    --teaser-border: 1px solid #efefef;
+    --teaserImage: url('../media/teaser.png');
+
+    --content-marginTop: 0.6em;
+
+    /** Navigation Config */
+    --desktop-fontColor: #333;
+    --desktop-textDecoration: none;
+    --desktop-hoverColor: #bbbbbb;
+
+    --mobile-fontColor: #fff;
+    --mobile-fontShadow: #333;
+
+    --mobile-menuBackground: rgba(60, 60, 60, 0.5); /** Always use rgba(), otherwise no Acrylic background*/
+
+    /** Styling Config */
+
+    --content-padding: 0.6em 0 0.6em 0; 
+    --humburger-color: #000;
+}

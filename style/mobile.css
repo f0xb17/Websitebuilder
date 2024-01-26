@@ -1,0 +1,92 @@
+@media screen and (max-width: 1023px) {
+    body {
+        font-size: var(--mobileFontSize);
+    }
+
+    #app {
+        width: 100vw;
+    }
+
+    #app header {
+        min-height: var(--header-height);
+        padding: var(--elementPadding);
+    }
+
+    #app header .grid {
+        width: 100%;
+    }
+
+    #app header .grid .item {
+        min-width: 40vw;
+    }
+
+    #app header .grid .item nav {
+        text-align: right;
+    }
+
+    #app header .grid .item nav input[type='checkbox']:not(:checked) + ul {
+        display: none;
+    }
+
+    #app header .grid .item nav input[type='checkbox'] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    #app header .grid .item nav ul {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        min-height: 100vh;
+        animation: fade 0.8s;
+        backdrop-filter: blur(10px);
+        background: var(--mobile-menuBackground);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        -webkit-animation: fade 0.8s;
+        -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        -webkit-backdrop-filter: blur(10px);
+        -moz-animation: fade 0.8s;
+    }
+
+    #app header .grid .item nav ul li {
+        display: block;
+        margin-bottom: 0;
+        justify-content: space-between;
+        text-align: center;
+        padding: 1.5em;
+        border-bottom: 1px solid rgb(255 255 255 / 20%);
+    }
+
+    #app header .grid .item nav ul li a {
+        color: var(--mobile-fontColor);
+        font-size: 1.6em;
+        text-shadow: 1px 1px 10px var(--mobile-fontShadow);
+        text-decoration: none;
+    }
+    
+    #app header .grid .item nav ul li a:hover {
+        color: var(--desktop-hoverColor);
+        text-decoration: none;
+    }
+
+    #app main .content {
+        width: 100vw;
+    }
+
+    #app main .teaser {
+        margin-top: 0.6em;
+        height: 30vh;
+    }
+
+    #app footer {
+        min-height: 10vh;
+        padding: var(--elementPadding);
+    }
+
+    #app footer .item {
+        padding: var(--elementPadding);
+    }
+}

@@ -1,0 +1,8 @@
+@font-face {
+    font-family: var(--fontFamily);
+    src: var(--fontPath) var(--fontType);
+}
+
+body {
+    font-family: var(--fontFamily), var(--fontFormat);
+}
